@@ -1,0 +1,317 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "saloon skill",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "DaysIntent",
+          "slots": [
+            {
+              "name": "day",
+              "type": "weekSlot"
+            }
+          ],
+          "samples": [
+            "show me the slots on {day}",
+            "i would like to pick {day}",
+            "{day}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "SaloonIntent",
+          "slots": [],
+          "samples": [
+            "okay",
+            "yes go ahead",
+            "yes book an appointment ",
+            "yes ",
+            "okay book it"
+          ]
+        },
+        {
+          "name": "SaloonNameIntent",
+          "slots": [
+            {
+              "name": "saloonName",
+              "type": "saloons"
+            }
+          ],
+          "samples": [
+            "i would like to choose {saloonName}",
+            "pick {saloonName}",
+            "i would like to pick {saloonName}",
+            "{saloonName}"
+          ]
+        },
+        {
+          "name": "slotIntent",
+          "slots": [
+            {
+              "name": "slotz",
+              "type": "slotz"
+            }
+          ],
+          "samples": [
+            "i would like to select {slotz}",
+            "i would like to choose {slotz}",
+            "pick {slotz}",
+            "choose {slotz}",
+            "{slotz}"
+          ]
+        },
+        {
+          "name": "serviceIntent",
+          "slots": [
+            {
+              "name": "services",
+              "type": "services"
+            }
+          ],
+          "samples": [
+            "i would like to choose {services}",
+            "choose {services}",
+            "i would like to pick {services}",
+            "i would like book {services}",
+            "{services}"
+          ]
+        },
+        {
+          "name": "confirmIntent",
+          "slots": [],
+          "samples": [
+            "i would like to confirm",
+            "confirm"
+          ]
+        },
+        {
+          "name": "locationIntent",
+          "slots": [
+            {
+              "name": "location",
+              "type": "location"
+            }
+          ],
+          "samples": [
+            "i would like to pick {location}",
+            "{location}"
+          ]
+        },
+        {
+          "name": "bookingIntent",
+          "slots": [],
+          "samples": [
+            "do i have any bookings",
+            "show me the bookings",
+            "show my bookings"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "sunday"
+              }
+            },
+            {
+              "name": {
+                "value": "saturday"
+              }
+            },
+            {
+              "name": {
+                "value": "friday"
+              }
+            },
+            {
+              "name": {
+                "value": "thursday"
+              }
+            },
+            {
+              "name": {
+                "value": "wednesday"
+              }
+            },
+            {
+              "name": {
+                "value": "tuesday"
+              }
+            },
+            {
+              "name": {
+                "value": "monday"
+              }
+            }
+          ],
+          "name": "weekSlot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "uppal"
+              }
+            },
+            {
+              "name": {
+                "value": "kukatpally"
+              }
+            }
+          ],
+          "name": "location"
+        },
+        {
+          "values": [
+            {
+              "id": "626ff5584ea16800587e9530",
+              "name": {
+                "value": "oliva"
+              }
+            },
+            {
+              "id": "6285e6b390344c003f0934c3",
+              "name": {
+                "value": "bubbles"
+              }
+            },
+            {
+              "id": "626ff5854ea16800587e9532",
+              "name": {
+                "value": "venky"
+              }
+            },
+            {
+              "id": "626ff4944ea16800587e952c",
+              "name": {
+                "value": "trendz"
+              }
+            }
+          ],
+          "name": "saloons"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "haircolour"
+              }
+            },
+            {
+              "name": {
+                "value": "shaving"
+              }
+            },
+            {
+              "name": {
+                "value": "facial"
+              }
+            },
+            {
+              "name": {
+                "value": "spa"
+              }
+            },
+            {
+              "name": {
+                "value": "hairwash"
+              }
+            },
+            {
+              "name": {
+                "value": "hairstraightning"
+              }
+            },
+            {
+              "name": {
+                "value": "pedicure"
+              }
+            },
+            {
+              "name": {
+                "value": "tanremoval"
+              }
+            },
+            {
+              "name": {
+                "value": "facepack"
+              }
+            },
+            {
+              "name": {
+                "value": "haircut"
+              }
+            }
+          ],
+          "name": "services"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "05:00 pm to 06:00 pm"
+              }
+            },
+            {
+              "name": {
+                "value": "04:00 pm to 05:00 pm"
+              }
+            },
+            {
+              "name": {
+                "value": "03:00 pm to 04:00 pm"
+              }
+            },
+            {
+              "name": {
+                "value": "11:00 am to 12:00 pm"
+              }
+            },
+            {
+              "name": {
+                "value": "02:00 pm to 03:00 pm"
+              }
+            },
+            {
+              "name": {
+                "value": "12:00 pm to 01:00 pm",
+                "synonyms": [
+                  "midday to one p. m.",
+                  "pick noon to one p. m."
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "10:00 am to 11:00 am"
+              }
+            }
+          ],
+          "name": "slotz"
+        }
+      ]
+    }
+  },
+  "version": "89"
+}
